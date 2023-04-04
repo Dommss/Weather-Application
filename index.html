@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Tilt+Neon&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="./images/cloudy.png" />
+  </head>
+  <body>
+    <div class="unsplashImage">
+      <img src="" alt="" id="imagery" />
+      <div class="container">
+        <div class="search">
+          <input type="text" class="search-bar" placeholder="Search..." />
+          <button>
+            <img src="./images/mag-glass.svg" alt="a magnifying glass" />
+          </button>
+        </div>
+        <div class="weather loading">
+          <h2 class="city">Weather in ...</h2>
+          <div class="temp">30 C</div>
+          <div class="flex">
+            <img
+              src="https://openweathermap.org/img/wn/04d.png"
+              alt="Weather Icon"
+              class="icon"
+            />
+            <div class="description">Broken Clouds</div>
+          </div>
+          <div class="humidity">The humidity is ...</div>
+          <div class="wind">The wind speed is ...</div>
+        </div>
+        <p class="signed">Coded by Dommses</p>
+      </div>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

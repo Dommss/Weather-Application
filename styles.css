@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  overflow: hidden;
+  font-size: 120%;
+}
+body .unsplashImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body .unsplashImage #imagery {
+  position: absolute;
+  z-index: -1;
+  min-width: 100%;
+  min-height: 100vh;
+  filter: brightness(0.8);
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+body .unsplashImage .container {
+  background-color: rgba(0, 0, 0, 0.8156862745);
+  color: white;
+  padding: 2em;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 500px;
+  margin: 1em;
+}
+body .unsplashImage .container .search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .unsplashImage .container .search .search-bar {
+  border: none;
+  outline: none;
+  padding: 0.5em 1.5em;
+  border-radius: 18px;
+  width: calc(100% - 50px);
+  background-color: rgba(255, 255, 255, 0.3568627451);
+  color: white;
+  font-family: inherit;
+  font-size: 20px;
+  transition: 0.2s ease-in-out;
+}
+body .unsplashImage .container .search .search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.4823529412);
+}
+body .unsplashImage .container .search button {
+  margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  height: 3.7em;
+  width: 3.7em;
+  background-color: rgba(255, 255, 255, 0.3568627451);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+body .unsplashImage .container .search button:hover {
+  background-color: rgba(255, 255, 255, 0.4823529412);
+}
+body .unsplashImage .container .search button img {
+  width: 1.5em;
+  height: 1.5em;
+  filter: invert(100%);
+}
+body .unsplashImage .container .weather .city {
+  margin-top: 0.3em;
+}
+body .unsplashImage .container .weather .temp {
+  margin-top: 0.3em;
+  display: block;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+body .unsplashImage .container .weather .flex {
+  display: flex;
+  align-items: center;
+}
+body .unsplashImage .container .weather .flex .description {
+  text-transform: capitalize;
+  margin-left: 5px;
+}
+body .unsplashImage .container .weather.loading {
+  visibility: hidden;
+}
+body .unsplashImage .container .weather.loading:after {
+  position: absolute;
+  top: 0;
+  visibility: visible;
+  content: "Loading...";
+  color: white;
+  text-align: center;
+  font-size: 2.5em;
+}
+body .unsplashImage .container .signed {
+  position: absolute;
+  top: 96%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  white-space: nowrap;
+  font-weight: 300;
+  text-decoration: underline;
+}/*# sourceMappingURL=styles.css.map */
