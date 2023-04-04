@@ -118,6 +118,11 @@ body {
         white-space: nowrap;
         font-weight: 300;
         text-decoration: underline;
+
+        a {
+          text-decoration: none;
+          color: white;
+        }
       }
     }
   }

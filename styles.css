@@ -111,4 +111,8 @@ body .unsplashImage .container .signed {
   white-space: nowrap;
   font-weight: 300;
   text-decoration: underline;
+}
+body .unsplashImage .container .signed a {
+  text-decoration: none;
+  color: white;
 }/*# sourceMappingURL=styles.css.map */
